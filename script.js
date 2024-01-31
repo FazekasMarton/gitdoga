@@ -1,8 +1,9 @@
 let numbers = []
 
 document.getElementById("add").addEventListener("click", () => {
-    let number = document.getElementById("number").value
-    numbers.push(number)
+    let number = document.getElementById("number")
+    numbers.push(number.value)
+    number.value = ""
     showList()
 })
 
