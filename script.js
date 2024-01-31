@@ -9,13 +9,13 @@ document.getElementById("add").addEventListener("click", () => {
 
 document.getElementById("min").addEventListener("click", () => {
     let list = document.getElementById("list")
-    let min = numbers[0]
+    let max = numbers[0]
     numbers.forEach(number => {
-        if(number < min){
-            min = number
+        if(number > max){
+            max = number
         }
     });
-    list.innerText = min
+    list.innerText = max
 })
 
 function showList(){
