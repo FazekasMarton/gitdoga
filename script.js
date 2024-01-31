@@ -7,6 +7,17 @@ document.getElementById("add").addEventListener("click", () => {
     showList()
 })
 
+document.getElementById("min").addEventListener("click", () => {
+    let list = document.getElementById("list")
+    let min = numbers[0]
+    numbers.forEach(number => {
+        if(number < min){
+            min = number
+        }
+    });
+    list.innerText = min
+})
+
 function showList(){
     let list = document.getElementById("list")
     list.innerText = numbers.join(", ")
