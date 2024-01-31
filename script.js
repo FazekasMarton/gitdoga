@@ -2,7 +2,7 @@ let numbers = []
 
 document.getElementById("add").addEventListener("click", () => {
     let number = document.getElementById("number")
-    numbers.push(number.value)
+    numbers.push(Number(number.value))
     number.value = ""
     showList()
 })
